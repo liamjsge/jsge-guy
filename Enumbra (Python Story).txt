@@ -1,0 +1,123 @@
+import time
+import sys
+
+def delay_print(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.025)
+
+delay_print("Welcome to Enumbra, user. Type in your name below.\n")
+name = input()
+delay_print("This story is not for the faint-hearted. Are you sure you want to continue from the start screen?(yes) (no)\n")
+choice1 = input()
+while choice1 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice1 = input()
+if choice1 == "no":
+  delay_print("\n\nOh well, I guess this story is for another time. Thank you for taking interest, farewell. \nStory and Coding by Liam Edwards.\n")
+if choice1 == "yes":
+  delay_print("Very well. Let us start.")
+  time.sleep(2)
+  delay_print("\n\nYou wake up on a road, cold, confused. Your head feels like it has taken a hammer to it. Staring into the sky, there is a pitch black sky, but no stars in sight. You sit up, and look around. You see only a lamp post. The rest of the area is pitch black also. Do you want to go to the lamp post? (yes) (no)\n")
+choice2 = input()
+while choice2 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice2 = input()
+while choice2 == "no":
+  delay_print("\n\nYou sit there... doing nothing.\n")
+  choice2 = input()
+if choice2 == "yes":
+  delay_print("\n\nYou stumble over to the lamp post, dragging your feet on the ground, your head still pounding. Standing underneath it, the lamp post bathes you in a cold, orange light. Another one is lit up opposite to you, looking like an exact copy of the one you are under. Do you want to go to the next lamp post? (yes) (no)\n")
+choice3 = input()
+while choice3 == "":
+ delay_print("\n\nI don't know what you are saying.\n")
+while choice3 == "no":
+  delay_print("\n\nYou stand in the cold light, staring at the opposite lamp post.\n")
+  choice3 = input()
+if choice3 == "yes":
+  delay_print("\n\nYou once again stumble to the next lamp post, your head still thumping from the pain. Standing under the other lamp post, the light feels colder than the first one. The next one lights up, but... this one looks different. The light leads to an entrance, looking like a membrane, guts and limbs covering the 'door way'. You shiver in fear as you stand under the last light, outside of the entrance. Do you want to (go in) to the membrane? or maybe you want to (go back)?\n")
+choice4 = input()
+while choice4 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice4 = input()
+while choice4 == "go back":
+  delay_print("\n\nWhy go back when there is nowhere else to go?\n")
+  choice4 = input()
+while choice4 == "no":
+  delay_print("\n\nYou idle at the entrance, bracing yourself for the inevitable.\n")
+  choice4 = input()
+if choice4 == "go in":
+  delay_print("\n\nYou traverse into the doorway of the membrane. The stairs made of flesh squish underneath each step down the stairs you take. A scream echoes up the stairs, causing you to halt your progress. Do you want to (go back)? Or (continue) your journey down the flesh stairs?\n")
+choice5 = input()
+while choice5 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice5 = input()
+if choice5 == "go back":
+  delay_print("\n\nYou traverse back up the stairs, and the scream gets closer. You hear plops of footsteps behind you. Before you turn around, you are decapitated, your head rolling down the stairs violently. You are dead.\n")
+while choice5 =="no":
+  delay_print("\n\nYou stand, frozen on the stairs, wondering if you will go down, or go back.\n")
+  choice5 = input()
+if choice5 == "continue":
+  delay_print("\n\nYou continue down the stairs, deciding to face whatever is down there. With each step, you fear more and more what is down there. What is it? A creature of hell? Your own mind playing tricks on you? Or maybe it's just the distorted sound of rats at the bottom. You reach the bottom quicker than you thought. Maybe your thoughts kept you company. At the bottom of the stairs, there is two hallways. One goes (left), one goes (right). Which way do you want to go? Which way is the right way?\n") 
+choice6 = input()
+while choice6 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice6 = input()
+if choice6 == "left":
+  delay_print("\n\nYou go left, and a homeless man stands at the grated end of the hallway. He suddenly rushes at you, piercing your eyes with his dirty fingers, also piercing your brain in the progress. Your expression goes dead, as so do you. You are dead.\n")
+if choice6 == "right":
+  delay_print("\n\nYou go right. While traversing the hallway, you find a Ruger on the ground. Picking it up, you check the clip. It's full of 9mm bullets, ten to be exact. You keep it with you, just in case. At the end of said hallway, there is a black door. You feel that something is wrong with that door, thinking you should check it. Do you want to open the door?\n")
+choice7 = input()
+while choice7 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice7 = input()
+if choice7 == "yes":
+  delay_print("\n\nYou open the door, and a trap sets off, spikes impaling you from the ground. You are dead.\n")
+if choice7 == "check door":
+ delay_print("\n\nYou check the door, and find a wire connected to the trap. You untie the wire, holding it in the same position as you slip through the door, letting it go last second as you are now through the doorway. You close the door, and turning around, find creature, consisting of a normal man in a suit, tentacles with spikes erupting from his head, standing idle. What will you do? (fight), (talk), or (run)?\n")
+choice8 = input()
+while choice8 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  choice8 = input()
+if choice8 == "talk":
+  delay_print("\n\nYou make the stupid decision of talking to the being, ending with it's tentacles being thrusted through your stomach. The pain is unbearable, and you pass out, never waking up as your bleed to death. You are dead.\n")
+while choice8 == "run":
+  delay_print("\n\nYou have nowhere to run. You only have two options.\n")
+  choice8 = input()
+if choice8 == "fight":
+  delay_print("\n\nYou use your Ruger, shooting the creature straight in the head, killing it immediately. Your ears hurt as a high pitched noise screeches in your head, but fades shortly after. There is nothing to worry about. For now, anyway. You should (look around).\n")
+lookaround1 = input()
+while lookaround1 == "":
+  delay_print("\n\nI don't know what you are saying.\n")
+  lookaround1 = input()
+if lookaround1 == "look around":
+  delay_print("\n\nYou look around. Around you is weight loss posters. Wait... that shouldn't be there, should it? You should (look around) a little bit more.\n")
+lookaround2 = input()
+if lookaround2 == "look around":
+  delay_print("\n\nYou look around a little more, and find yourself in a train station. Why are you here? Is this supposed to mean something? These questions swiirl in your mind constantly. Beside you there is a track, with a pair of bloody shoes on the edge near them. There is a door that reads 'Metro Deactivation Room.', and upstairs there is a doorway. Do you want to (stand on tracks), (go to Metro room), or (go upstairs)? or maybe you just wanna (look around) some more?\n")
+choice9 = input()
+if choice9 == "stand on tracks":
+  delay_print("\n\nYou stand on the track, and you are ran over by an incoming train in an instant. You are dead.\n")
+if choice9 == "go upstairs":
+    delay_print("\n\nYou walk upstairs, and try to move the door. After a few attempts, you full-on run at the door, and you fall into the pit of the infinite. You let out a scream, as it is your last. You are dead.\n")
+while choice9 == "look around":
+  delay_print("\n\nYou look around, and your eyes stare at the shoes again. A train passes by at full speed, startling you. Maybe going on the tracks is not a good idea.\n")
+  choice9 = input()
+if choice9 == "go to Metro room":
+  delay_print("\n\nTurning the knob, you open the door, and then close it behind you. Turning around, you see an office, with posters for work, which you dread to see once again. You also notice a clock. The hands on the clock swing around in circles over and over again. The last thing you notice is the computer that says 'Deactivate Automatic Train System?'. Do you want to (use computer), (look at clock), or (look at posters)?\n")
+choice10 = input()
+while choice10 == "look at clock":
+  delay_print("\n\nGlancing at the clock, the hands spin around continously, not stopping for anything. Nothing important. You think so anyway.\n")
+  choice10 = input()
+while choice10 == "look at posters":
+  delay_print("\n\nLooking at the posters, you remind yourself of the time you used to work. You worked a lot. You worked so much to the point that it was painful to wake up in the morning. You wanted to prove your parents that you are more than 'a worthless piece of mud', showing that you can withstand such efforts. Was it a mistake? You should start thinking about that.\n")
+  choice10 = input()
+if choice10 == "use computer":
+  delay_print("\n\nYou sit down at the chair in front of the computer to use the keyboard. The screen says, 'Deactivate Automatic Train System?' Do you want to (turn off) the Automatic Train System? or do you want to (return)?\n")
+  choice10sub = input()
+  if choice10sub == "return":
+    delay_print("You stand up straight, going back to the entrance of the room, just like before.\n")
+    choice10 = input()
+  if choice10sub == "turn off":
+    delay_print("You press enter on the 'YES' icon, and the system turns off. Conveniently, the one of the trains idles at the stop. You come out of the room, and get on the train, sitting on one of the seats as it starts by itself. The train sets off, and you with it.")
